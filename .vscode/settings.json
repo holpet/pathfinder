@@ -1,0 +1,6 @@
+{
+  "editor.formatOnSave": true,
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  }
+}

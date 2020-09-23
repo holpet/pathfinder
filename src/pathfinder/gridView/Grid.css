@@ -1,0 +1,277 @@
+/** -------------------------- GRID -------------------------- **/
+
+.grid {
+  margin: 5px;
+  display: flex;
+  outline: 2px solid rgb(193, 242, 245);
+  /*box-shadow: 0px 0px 0px 2px rgb(193, 242, 245);*/
+}
+
+/** -------------------------- NODE -------------------------- **/
+
+.node-wrapper {
+  max-width: 35px;
+  max-height: 35px;
+  width: 1.8vw;
+  height: 4vh;
+  /*width: 1.3vw;*/
+  /*height: 2.6vh;*/
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+}
+
+.node {
+  border: 1px solid rgb(193, 242, 245);
+  margin-left: 0px;
+  font-size: 2.5em;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.node:hover {
+  outline: none;
+  background-color: #f1edb4;
+}
+
+.node:focus {
+  outline: none;
+}
+
+/* +++++++++++++++ LOCATOR CLASSES +++++++++++++++ */
+
+.start,
+.end {
+  background-color: #c1f2f5 !important;
+}
+.smaller {
+  transform: scale(0.85);
+}
+.wall,
+.weight,
+.wall-no-anim,
+.weight-no-anim {
+  background-color: #164850 !important;
+  border: 1px solid #164850 !important;
+}
+.wall-gener {
+  background-color: #164850 !important;
+  border: 1px solid #164850 !important;
+  animation-name: anim-wall-gener;
+  animation-duration: 0.9s;
+  animation-timing-function: linear;
+}
+.algo,
+.algo-fin {
+  /*background-color: #e63946;*/
+  background-color: rgb(105, 160, 173);
+  animation-name: anim-algo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+.path,
+.path-fin {
+  background-color: #ffe66d;
+  animation-name: anim-path;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  text-decoration: none;
+}
+
+.norm {
+  background: white;
+}
+
+.rel {
+  position: relative;
+  width: 112%;
+  height: 112%;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  filter: invert(34%) sepia(75%) saturate(433%) hue-rotate(140deg)
+    brightness(93%) contrast(86%);
+  /*filter: invert(31%) sepia(58%) saturate(395%) hue-rotate(133deg)
+    brightness(92%) contrast(92%);*/
+}
+.en {
+  margin-left: 20%;
+}
+.st {
+  margin-top: -5%;
+  margin-right: -30%;
+  margin-left: -5%;
+}
+
+.hand {
+  position: absolute;
+  z-index: 0;
+  margin: -7%;
+  margin-left: 0%;
+  transform: scale(0.75);
+  filter: invert(95%) sepia(8%) saturate(1403%) hue-rotate(349deg)
+    brightness(105%) contrast(89%);
+}
+.hand-path {
+  position: absolute;
+  z-index: 0;
+  margin: -7%;
+  margin-left: 0%;
+  transform: scale(0.75);
+  filter: invert(22%) sepia(22%) saturate(1375%) hue-rotate(140deg)
+    brightness(93%) contrast(90%);
+}
+.hand-not-weighted {
+  position: absolute;
+  z-index: 0;
+  margin: -7%;
+  margin-left: 0%;
+  transform: scale(0.75);
+  filter: invert(39%) sepia(91%) saturate(3595%) hue-rotate(334deg)
+    brightness(91%) contrast(98%);
+}
+
+.bg {
+  position: absolute;
+  z-index: 0;
+  margin: -7%;
+  transform: scale(0.75);
+  filter: invert(89%) sepia(21%) saturate(436%) hue-rotate(8deg)
+    brightness(106%) contrast(89%);
+}
+
+/* ++++++++++++++++++ ANIMATIONS ++++++++++++++++++ */
+
+.loc:hover {
+  animation-name: anim-start-end;
+  animation-duration: 0.9s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.5, 1);
+}
+
+@keyframes anim-start-end {
+  5% {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.2) rotate(20deg);
+    -webkit-transform: scale(1.2) rotate(20deg);
+    -ms-transform: scale(1.2) rotate(20deg);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+  }
+}
+
+.wall:hover,
+.weight:hover {
+  animation-name: anim-wall;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.77, 0.9, 0.95, 1);
+}
+
+@keyframes anim-wall {
+  0% {
+    transform: scale(1.2);
+    outline: solid 2px rgb(241, 237, 180);
+  }
+  100% {
+    transform: scale(0.95);
+    outline: 0px solid #164850;
+  }
+}
+
+.end:hover,
+.start:hover {
+  animation-name: anim-end-start;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.77, 0.9, 0.95, 1);
+}
+
+@keyframes anim-algo {
+  0% {
+    transform: scale(0.1);
+    background-color: #ffe66d;
+    border-radius: 50%;
+    border: none;
+  }
+  30% {
+    background-color: #ffe66d;
+  }
+  60% {
+    border-radius: 50%;
+    border: none;
+    transform: scale(0.9);
+  }
+  70% {
+    background-color: #ee6c4d;
+  }
+  80% {
+    transform: scale(1.1);
+    background-color: #e63946;
+    border-radius: 5%;
+  }
+  90% {
+    transform: scale(0.9);
+    background-color: #8689b9;
+    border-radius: 0%;
+  }
+  100% {
+    transform: scale(1);
+    border-radius: 0%;
+    background-color: rgb(105, 160, 173);
+  }
+}
+
+@keyframes anim-path {
+  0% {
+    transform: scale(0.6);
+    /*background-color: #e63946;*/
+    border: none;
+    box-shadow: none;
+  }
+  50% {
+    /*border-radius: 50%;*/
+    border: none;
+    transform: scale(0.9);
+  }
+  80% {
+    /*background-color: #ee6c4d;*/
+  }
+  90% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    background-color: #ffe66d;
+  }
+}
+
+@keyframes anim-wall-gener {
+  0% {
+    transform: scale(0.3);
+    outline: solid 2px rgb(241, 237, 180);
+  }
+  90% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(0.95);
+    outline: 0px solid #164850;
+  }
+}
