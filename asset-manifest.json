@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/pathfinder/static/css/main.3df9da20.chunk.css",
+    "main.js": "/pathfinder/static/js/main.0cfc5688.chunk.js",
+    "main.js.map": "/pathfinder/static/js/main.0cfc5688.chunk.js.map",
+    "runtime-main.js": "/pathfinder/static/js/runtime-main.17d2ccb5.js",
+    "runtime-main.js.map": "/pathfinder/static/js/runtime-main.17d2ccb5.js.map",
+    "static/js/2.b354800c.chunk.js": "/pathfinder/static/js/2.b354800c.chunk.js",
+    "static/js/2.b354800c.chunk.js.map": "/pathfinder/static/js/2.b354800c.chunk.js.map",
+    "index.html": "/pathfinder/index.html",
+    "precache-manifest.9567be7bc7a33902d02d4c555e6f1053.js": "/pathfinder/precache-manifest.9567be7bc7a33902d02d4c555e6f1053.js",
+    "service-worker.js": "/pathfinder/service-worker.js",
+    "static/css/main.3df9da20.chunk.css.map": "/pathfinder/static/css/main.3df9da20.chunk.css.map",
+    "static/js/2.b354800c.chunk.js.LICENSE.txt": "/pathfinder/static/js/2.b354800c.chunk.js.LICENSE.txt",
+    "static/media/dot_full.svg": "/pathfinder/static/media/dot_full.f7c48a77.svg",
+    "static/media/flag.svg": "/pathfinder/static/media/flag.7228ac6a.svg",
+    "static/media/hold.svg": "/pathfinder/static/media/hold.608d80cd.svg",
+    "static/media/start.svg": "/pathfinder/static/media/start.d9d208a8.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.17d2ccb5.js",
+    "static/js/2.b354800c.chunk.js",
+    "static/css/main.3df9da20.chunk.css",
+    "static/js/main.0cfc5688.chunk.js"
+  ]
+}
