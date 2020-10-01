@@ -171,7 +171,10 @@ export default class Header extends Component {
             </div>
           </Navbar.Collapse>
           <div className="order-0">
-            <Nav.Link id="header-link" href="#link">
+            <Nav.Link
+              id="header-link"
+              href="https://github.com/holpet/pathfinder"
+            >
               Github&nbsp;repository
             </Nav.Link>
           </div>
