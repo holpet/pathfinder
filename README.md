@@ -10,12 +10,12 @@ Project was written in Javascript, using the React library.<br />
 • The main component the user will navigate is a full screen grid that contains <b>"START"</b> and <b>"END"</b> nodes. These nodes can be moved around the grid with a mouse button. <br />
 • By clicking (and holding) the left mouse button, user is able to draw <b>"WALLS"</b> - or alternatively <b>"WEIGHTS"</b> (CTRL + left mouse button) that serve as hurdles on the way from "START" to "END". "WALLS" cannot be crossed, while "WEIGHTS" can - but the crossing is harder (by ratio of 6:1 to normal, non-weighted grid squares). <br />
 
-<span style="display: block; margin-left: auto; margin-right: auto; width: 50%;">![Demo #1](/src/img/demo1.gif/)</span>
+![Demo #1](/src/img/demo1.gif/)
 
 • The top site navigation bar lets the user choose from 5 different algorithms and in case they don't want to draw "WALLS" or "WEIGHTS" themselves, they can <b>generate a maze or simple stairs</b> and then <b>click "START"</b> to begin the animation for pathfinding.<br />
-• By moving the "START" and "END" nodes once the solving animation is finished, the path will be recalculated and shown on the grid.<br /><br />
+• By moving the "START" and "END" nodes once the solving animation is finished, the path will be recalculated and shown on the grid.<br />
 
-<span style="display: block; margin-left: auto; margin-right: auto; width: 50%;">![Demo #2](/src/img/demo2.gif/)</span>
+![Demo #2](/src/img/demo2.gif/)
 
 ### Additional information
 
