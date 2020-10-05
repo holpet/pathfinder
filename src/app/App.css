@@ -12,20 +12,25 @@
   align-items: center;**/
 }
 
+@font-face {
+  font-family: crawl;
+  src: url(../fonts/SWCrawlBody.ttf);
+}
+
 #custom-bg {
   background-color: #164850;
   padding-top: 5px;
 }
 
 .bold-text {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: crawl, "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
   font-size: 14px;
   color: #206570 !important;
 }
 
 .bold-text-bigger {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: crawl, "Arial Narrow", Arial, sans-serif;
   font-size: 15px;
   font-weight: bold;
   color: #206570 !important;
@@ -99,7 +104,7 @@
   color: #164850;
   font-weight: bold;
   font-size: 13px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: crawl, "Arial Narrow", Arial, sans-serif;
   background-color: #f1edb4;
   text-decoration: none;
 }
@@ -234,7 +239,7 @@
   backdrop-filter: blur(2px);
   color: white;
   font-size: 13px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: crawl, "Arial Narrow", Arial, sans-serif;
   background-color: rgba(30, 97, 107, 0.63) !important;
 }
 

@@ -83,6 +83,33 @@
   background: white;
 }
 
+@supports (-moz-appearance: none) {
+  .img {
+    transform: scale(0.8) !important;
+    margin-top: -90% !important;
+    margin-left: -90% !important;
+  }
+  .en {
+    margin-left: -65% !important;
+  }
+  .bg,
+  .hand,
+  .hand-path,
+  .hand-not-weighted {
+    margin-left: -3px !important;
+    margin-top: -5px !important;
+    transform: scale(0.68) !important;
+  }
+  .weight:hover {
+    outline: none !important;
+    border: solid 1px rgb(241, 237, 180) !important;
+  }
+  .grid {
+    outline: none !important;
+    border: 2px solid rgb(193, 242, 245) !important;
+  }
+}
+
 .rel {
   position: relative;
   width: 112%;
