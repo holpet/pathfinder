@@ -21,10 +21,17 @@
   display: flex;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 400px) {
+  .node-wrapper {
+    width: 5vw;
+    height: 4.9vh;
+  }
+}
+
+@media only screen and (min-width: 401px) {
   .node-wrapper {
     width: 3vw;
-    height: 4.9vh;
+    height: 4.85vh;
   }
 }
 
