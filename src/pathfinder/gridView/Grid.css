@@ -12,13 +12,48 @@
 .node-wrapper {
   max-width: 35px;
   max-height: 35px;
-  width: 1.8vw;
-  height: 4vh;
+  /* width: 1.8vw;
+  height: 4vh; */
   /*width: 1.3vw;*/
   /*height: 2.6vh;*/
   padding: 0px;
   margin: 0px;
   display: flex;
+}
+
+@media only screen and (min-width: 576px) {
+  .node-wrapper {
+    width: 3vw;
+    height: 4.9vh;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .node-wrapper {
+    width: 2.9vw;
+    height: 4.8vh;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .node-wrapper {
+    width: 2.75vw;
+    height: 4.7vh;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  .node-wrapper {
+    width: 2.45vw;
+    height: 4.5vh;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .node-wrapper {
+    width: 1.8vw;
+    height: 4vh;
+  }
 }
 
 .node {
