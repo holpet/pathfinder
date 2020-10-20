@@ -21,31 +21,52 @@
   display: flex;
 }
 
+@media only screen and (max-width: 360px) {
+  .node-wrapper {
+    width: 9.5vw;
+    height: 4.9vh;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .node-wrapper {
+    width: 8.5vw;
+    height: 4.9vh;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .node-wrapper {
-    width: 5vw;
-    height: 4.9vh;
+    width: 7vw;
+    height: 4.85vh;
   }
 }
 
 @media only screen and (min-width: 501px) {
   .node-wrapper {
-    width: 3vw;
+    width: 7vw;
     height: 4.85vh;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .node-wrapper {
-    width: 2.6vw;
+    width: 5vw;
     height: 4.8vh;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .node-wrapper {
-    width: 2.5vw;
+    width: 3.5vw;
     height: 4.6vh;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .node-wrapper {
+    width: 2.55vw;
+    height: 4.25vh;
   }
 }
 
