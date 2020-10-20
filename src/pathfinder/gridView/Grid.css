@@ -37,15 +37,15 @@
 
 @media only screen and (min-width: 992px) {
   .node-wrapper {
-    width: 2.75vw;
-    height: 4.7vh;
+    width: 2.6vw;
+    height: 4.6vh;
   }
 }
 
 @media only screen and (min-width: 1350px) {
   .node-wrapper {
     width: 2.3vw;
-    height: 4vh;
+    height: 4.2vh;
   }
 }
 
